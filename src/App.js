@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from "react";
-
 import MovieCard from "./MovieCard";
 import SearchIcon from "./search.svg";
 import "./App.css";
+
+
 
 const API_URL = "http://www.omdbapi.com?apikey=b6003d8a";
 
@@ -23,7 +24,14 @@ const App = () => {
 
   return (
     <div className="app">
-      <h1>MovieLand</h1>
+      <div className="header flex items-center">
+        <img
+          className="header-icon w-20 h-20 mr-2"
+          src="./icon.svg"
+          alt="icon"
+        />
+        <h1 >MovieLand</h1>
+      </div>
 
       <div className="search">
         <input
